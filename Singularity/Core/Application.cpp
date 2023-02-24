@@ -9,14 +9,14 @@ Application::~Application()
 {
 }
 
-Application* Application::create(GameConfig* config)
+Application* Application::create(app_config* config)
 {
 #ifdef _WINDOWS
     return new Win32Application(config);
 #endif
 }
 
-Time Application::get_app_time_data()
+time_data Application::get_app_time_data()
 {
     return {0,0};
 }

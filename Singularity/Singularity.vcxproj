@@ -27,6 +27,9 @@
     <ClCompile Include="Core\Platform\Win32\Win32Application.cpp" />
     <ClCompile Include="Graphics\GraphicsSystem.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Graphics\D3D11" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{8BE094A4-C471-4572-890F-DD3C29529126}</ProjectGuid>

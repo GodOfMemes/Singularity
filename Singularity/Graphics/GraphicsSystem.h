@@ -6,7 +6,8 @@
 #include "../Defines.h"
 
 struct VertexBuffer;
- class GraphicsSystem
+
+class GraphicsSystem
 {
 public:
     static GraphicsSystem* GetGraphicsSystem();

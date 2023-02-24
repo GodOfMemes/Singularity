@@ -2,8 +2,8 @@
 #include "Application.h"
 
 Application* app;
-GameConfig* Config;
-ErrorCallback error_callback;
+app_config* Config;
+message_delegate error_callback;
 
 void Engine::send_error(const char* message)
 {
@@ -13,13 +13,14 @@ void Engine::send_error(const char* message)
     }
 }
 
-GameConfig* Engine::get_config()
+app_config* Engine::get_config()
 {
     return Config;
 }
 
-void Engine::start(GameConfig* config,ErrorCallback callback)
+void Engine::start(app_config* config,message_delegate callback)
 {
+    srand(time(nullptr));
     error_callback = callback;
     if(!config)
     {
@@ -34,7 +35,7 @@ void Engine::start(GameConfig* config,ErrorCallback callback)
     delete app;
 }
 
-Time Engine::get_time_data()
+time_data Engine::get_time_data()
 {
     if(!app) return {0,0};
     return app->get_app_time_data();

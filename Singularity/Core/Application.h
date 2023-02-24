@@ -10,9 +10,9 @@ public:
     Application();
     virtual ~Application();
     
-    static Application* create(GameConfig* config);
+    static Application* create(app_config* config);
     virtual void start() = 0;
-    virtual Time get_app_time_data();
+    virtual time_data get_app_time_data();
 protected:
     std::chrono::system_clock::time_point previous_update;
     float total_time;
