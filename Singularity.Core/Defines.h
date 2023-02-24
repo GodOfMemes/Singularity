@@ -1,10 +1,6 @@
 #pragma once
-#include "Core/Types.h"
 
 #define SAPI extern "C" __declspec(dllexport)
-
-SAPI void Start(GameConfig* config);
-SAPI double GetRuntime();
 
 // TODO
 // 1. Error Callback

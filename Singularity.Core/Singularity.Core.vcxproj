@@ -11,20 +11,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\Application.h" />
+    <ClInclude Include="Core\ContainerManager.h" />
+    <ClInclude Include="Core\Engine.h" />
+    <ClInclude Include="Core\Platform\Win32\Win32Application.h" />
     <ClInclude Include="Core\Types.h" />
     <ClInclude Include="Defines.h" />
     <ClInclude Include="Graphics\GraphicsDefines.h" />
     <ClInclude Include="Graphics\GraphicsSystem.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Core\Application.cpp" />
+    <ClCompile Include="Core\ContainerManager.cpp" />
     <ClCompile Include="Core\Engine.cpp" />
+    <ClCompile Include="Core\Platform\Win32\Win32Application.cpp" />
     <ClCompile Include="Graphics\GraphicsSystem.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{22EA7ADD-EBCF-4669-B29F-D2B831860807}</ProjectGuid>
+    <ProjectGuid>{8BE094A4-C471-4572-890F-DD3C29529126}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SingularityBackend</RootNamespace>
+    <RootNamespace>Singularity.Core</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
